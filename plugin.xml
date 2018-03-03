@@ -12,7 +12,7 @@
     <license>MIT License, see LICENSE.md for details</license>
 
     <engines>
-            <engine name="cordova" version="&gt;=3.0.0" />
+            <engine name="cordova" version=">=3.0.0" />
     </engines>
 
     <js-module src="www/cdv-plugin-mercadopago.js" name="MercadoPago">
@@ -41,7 +41,7 @@
         </config-file>
 
         <header-file src="src/ios/MercadoPagoPlugin.h" target-dir="MercadoPago"/>
-        <source-file src="src/ios/MercadoPagoPlugin.m" target-dir="MercadoPago"/>
+        <source-file src="src/ios/MercadoPagoPlugin.m" target-dir="MercadoPago" framework="true" />
         <framework src="MercadoPagoSDK" type="podspec" spec="3.0.0-BETA-39" />
     </platform>
 
